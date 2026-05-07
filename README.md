@@ -2,6 +2,7 @@ RadarMOT: Radar-Informed 3D Multi-Object Tracking under Adverse Conditions
 ---
 
 [![arXiv](https://img.shields.io/badge/arXiv-2604.13571-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.13571)
+[![website](https://img.shields.io/badge/Project-Website-blue)](https://bingxue-xu.github.io/RadarMOT)
 [![poster](https://img.shields.io/badge/ICRA'26_workshop|Poster-6495ed?style=flat&logo=Shotcut&logoColor=wihte)](https://drive.google.com/file/d/1kdWUai6_KiSi3-Abp_2aLyY9dkRWXolZ/view?usp=sharing)
 
 TL;DR: We address real-world adverse environmental challenges in 3D multi-object tracking: incorporating radar as explicit physical **observation** in tracking stage and recover tracks when detections are missed. Our RadarMOT efficiently captures moving objects cues, , compatible with any detector **without retraining**.  🚀
@@ -22,11 +23,11 @@ We compare our method with baselines on the MAN-TruckScenes validation set under
 | MCTrack | CenterPoint | 26.6 | 33636 | 13026 | 32378 | 5325 | [metrics_summary.json](results/mctrack_metrics_summary.json) |
 | **RadarMOT (ours)** | CenterPoint | **33.3** | **42717** | 12257 | **24906** | **3716** | [metrics_summary.json](results/radarmot_metrics_summary.json) |
 
-### Range Consistency
+### Robustness
 
-Range consistency comparison across increasing range intervals. 
+Range consistency comparison across ranges. 
 
-| Method | Detector | Overall<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ | 0–50&nbsp;m<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ | 50–100&nbsp;m<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ | 100–150&nbsp;m<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ |
+| Method | Detector | Overall<br>AMOTA% ↑ / IDS ↓ | 0–50 m<br>AMOTA% ↑ / IDS ↓ | 50–100 m<br>AMOTA% ↑ / IDS ↓ | 100–150 m<br>AMOTA% ↑ / IDS ↓ |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | CenterPoint | CenterPoint† | 22.8 / 7278 | 28.1 / 2766 | 21.5 / 3107 | 21.2 / 1518 |
 | MCTrack | CenterPoint† | 26.6 / 5325 | 30.8 / 1804 | 23.8 / 1704 | 20.1 / **836** |

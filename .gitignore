@@ -1,0 +1,22 @@
+# Template placeholder files
+static/images/carousel*.jpg
+static/pdfs/sample.pdf
+static/videos/banner_video.mp4
+static/videos/carousel*.mp4
+
+# Non-minified JS (minified versions are used)
+static/js/bulma-carousel.js
+static/js/bulma-slider.js
+
+# CSS debug file
+static/css/bulma.css.map.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
