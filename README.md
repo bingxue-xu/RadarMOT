@@ -16,7 +16,7 @@ TL;DR: We address real-world adverse environmental challenges in 3D multi-object
 We compare our method with baselines on the MAN-TruckScenes validation set under the same settings, and provide detailed metric summaries, including range bins, classes, and full results for 34 scene tags, in the metrics_summary JSON files.
 
 ### Main performance
-| Method | Detector | AMOTA% ↑ | TP ↑ | FP ↓ | FN ↓ | IDS ↓ | Results |
+| Method | Detector | AMOTA%&nbsp;↑ | TP&nbsp;↑ | FP&nbsp;↓ | FN&nbsp;↓ | IDS&nbsp;↓ | Results |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | CenterPoint | CenterPoint | 22.8 | 37149 | **8467** | 26912 | 7278 | [metrics_summary.json](results/pubtracker_metrics_summary.json) |
 | MCTrack | CenterPoint | 26.6 | 33636 | 13026 | 32378 | 5325 | [metrics_summary.json](results/mctrack_metrics_summary.json) |
@@ -26,7 +26,7 @@ We compare our method with baselines on the MAN-TruckScenes validation set under
 
 Range consistency comparison across increasing range intervals. 
 
-| Method | Detector | Overall AMOTA% / IDS | 0–50 m AMOTA% / IDS | 50–100 m AMOTA% / IDS | 100–150 m AMOTA% / IDS |
+| Method | Detector | Overall<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ | 0–50&nbsp;m<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ | 50–100&nbsp;m<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ | 100–150&nbsp;m<br>AMOTA%&nbsp;↑&nbsp;/&nbsp;IDS&nbsp;↓ |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | CenterPoint | CenterPoint† | 22.8 / 7278 | 28.1 / 2766 | 21.5 / 3107 | 21.2 / 1518 |
 | MCTrack | CenterPoint† | 26.6 / 5325 | 30.8 / 1804 | 23.8 / 1704 | 20.1 / **836** |
